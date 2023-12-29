@@ -1,8 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import 'package:habo/model/user_action.dart';
 import 'package:habo/constants.dart';
-
-import '../model/user_action.dart';
 
 class FirestoreProvider {
   final CollectionReference actionsCollection =
