@@ -10,7 +10,7 @@ class FirestoreProvider {
   Future<void> addAction(ActionType action) async {
     try {
       UserAction dto = UserAction(action: action);
-      await actionsCollection.add(dto.toMap());
+      await actionsCollection.doc().set(dto.toMap());
     } catch (e) {
       if (kDebugMode) {
         print(e);
