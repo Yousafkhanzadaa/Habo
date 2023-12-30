@@ -1,9 +1,11 @@
 import 'dart:io';
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:habo/firebase_options.dart';
 import 'package:habo/habits/habits_manager.dart';
 import 'package:habo/navigation/app_router.dart';
 import 'package:habo/navigation/app_state_manager.dart';
@@ -12,8 +14,11 @@ import 'package:habo/settings/settings_manager.dart';
 import 'package:provider/provider.dart';
 import 'package:window_size/window_size.dart';
 
-void main() {
+void main() async {
   addLicenses();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     const Habo(),
   );
