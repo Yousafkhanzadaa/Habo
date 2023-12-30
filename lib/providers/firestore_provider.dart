@@ -1,0 +1,21 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
+import 'package:habo/model/user_action.dart';
+import 'package:habo/constants.dart';
+
+class FirestoreProvider {
+  final CollectionReference actionsCollection =
+      FirebaseFirestore.instance.collection('actions');
+
+  Future<void> addAction(ActionType action) async {
+    try {
+      UserAction dto = UserAction(action: action);
+      await actionsCollection.doc().set(dto.toMap());
+    } catch (e) {
+      if (kDebugMode) {
+        print(e);
+      }
+      rethrow;
+    }
+  }
+}

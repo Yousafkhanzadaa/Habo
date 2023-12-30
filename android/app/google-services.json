@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "xxx",
+    "project_id": "xx-xxx",
+    "storage_bucket": "xxxx-xxx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:xx:android:xxxxx",
+        "android_client_info": {
+          "package_name": "com.pavlenko.Habo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "xxx-xxxxxxx.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "xxxxxxxx-xxxxxx"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "xxxx-xxxxxx.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:xxxx:android:xxxx",
+        "android_client_info": {
+          "package_name": "xxxx.xxxx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "xxxx-xxx.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "xxx-xxxxxxx"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "xxxx-xxxxx.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
